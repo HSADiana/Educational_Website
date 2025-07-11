@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Login / Register</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #f7f8fa;
+    margin: 0; padding: 20px;
+    display: flex; justify-content: center; align-items: flex-start;
+    min-height: 100vh;
+  }
+  .container {
+    background: #fff;
+    max-width: 420px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.1);
+    padding: 30px 40px 40px;
+  }
+  h2 {
+    color: #224bcf;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  p.subtitle {
+    color: #6e6e6e;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  /* Toggle Buttons */
+  .toggle-buttons {
+    display: flex;
+    background: #ececec;
+    border-radius: 50px;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+  .toggle-buttons button {
+    flex: 1;
+    padding: 12px 0;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: transparent;
+    transition: all 0.3s ease;
+  }
+  .toggle-buttons button.active {
+    background: #224bcf;
+    color: white;
+  }
+
+  /* Form Styles */
+  form {
+    display: none;
+    flex-direction: column;
+    gap: 18px;
+  }
+  form.active {
+    display: flex;
+  }
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 92%;
+    padding: 12px 15px;
+    border: 1.5px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    font-family: inherit;
+    resize: vertical;
+  }
+  textarea {
+    min-height: 70px;
+  }
+  input[type="file"] {
+    padding: 6px 0;
+  }
+
+  /* Checkbox */
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+  }
+  .checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+  }
+  .checkbox-group a {
+    color: #224bcf;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  /* Submit Button */
+  button.submit-btn {
+    background-color: #224bcf;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  button.submit-btn:hover {
+    background-color: rgb(166, 165, 165);
+    color: #224bcf;
+  }
+
+  /* Footer */
+  .footer-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+  }
+  .footer-text a {
+    color: #4b51d9;
+    font-weight: 600;
+    text-decoration: none;
+  }
+</style>
+</head>
+<body>
+<a href="home.html" style="position: absolute; top: 30px; left: 40px; text-decoration: none; font-size: 20px; font-weight: bold; color: #1e3a8a;">
+  ← Back to Home
+</a>
+<div class="container">
+  <h2>Join Our Platform</h2>
+  <p class="subtitle">Create your account to get started with learning</p>
+
+  <div class="toggle-buttons">
+    <button id="studentBtn" class="active">⌛ Student</button>
+    <button id="teacherBtn">👩‍🏫 Teacher</button>
+  </div>
+
+  <!-- Student Form -->
+  <form id="studentForm" class="active" novalidate>
+    <input type="text" placeholder="Full Name *" required />
+    <input type="email" placeholder="Email Address *" required />
+    <input type="tel" placeholder="Phone Number" />
+    <input type="text" placeholder="Father's Name *" required />
+    <textarea placeholder="Tell us about the subjects you're interested in learning..."></textarea>
+    <input type="password" placeholder="Password *" required />
+    <input type="password" placeholder="Confirm Password *" required />
+    <div class="checkbox-group">
+      <input type="checkbox" id="termsStudent" required />
+      <label for="termsStudent">I agree to the <a href="#">Terms and Conditions</a></label>
+    </div>
+    <button type="submit" class="submit-btn">✨ Create Account</button>
+  </form>
+
+  <!-- Teacher Form -->
+  <form id="teacherForm" novalidate>
+    <input type="text" placeholder="Full Name *" required />
+    <input type="email" placeholder="Email Address *" required />
+    <input type="tel" placeholder="Phone Number *" required />
+    <input type="text" placeholder="Father's Name *" required />
+    <input type="text" placeholder="National Registration Card (NRC) *" required />
+    <select required>
+      <option value="" disabled selected>Select your highest education *</option>
+      <option>High School</option>
+      <option>Associate Degree</option>
+      <option>Bachelor's Degree</option>
+      <option>Master's Degree</option>
+      <option>Doctorate</option>
+    </select>
+    <select required>
+      <option value="" disabled selected>Select teaching experience (years) *</option>
+      <option>Less than 1 year</option>
+      <option>1 - 3 years</option>
+      <option>3 - 5 years</option>
+      <option>More than 5 years</option>
+    </select>
+    <input type="text" placeholder="Subject Specialization *" required />
+    <textarea placeholder="Please describe your teaching experience, institutions you've worked at, and any special achievements..." required></textarea>
+    <label for="uploadCV" style="font-weight: 600; margin-top: 10px; display: block;">Upload CV *</label>
+    <input type="file" id="uploadCV" name="uploadCV" accept=".pdf,.doc,.docx" required />
+
+    <input type="password" placeholder="Password *" required />
+    <input type="password" placeholder="Confirm Password *" required />
+    <div class="checkbox-group">
+      <input type="checkbox" id="termsTeacher" required />
+      <label for="termsTeacher">I agree to the <a href="#">Terms and Conditions</a></label>
+    </div>
+    <button type="submit" class="submit-btn">✨ Create Account</button>
+  </form>
+
+  <p class="footer-text">
+    Already have an account? <a href="#">Sign in here</a>
+  </p>
+</div>
+
+<script>
+  const studentBtn = document.getElementById('studentBtn');
+  const teacherBtn = document.getElementById('teacherBtn');
+  const studentForm = document.getElementById('studentForm');
+  const teacherForm = document.getElementById('teacherForm');
+
+  studentBtn.addEventListener('click', () => {
+    studentBtn.classList.add('active');
+    teacherBtn.classList.remove('active');
+    studentForm.classList.add('active');
+    teacherForm.classList.remove('active');
+  });
+
+  teacherBtn.addEventListener('click', () => {
+    teacherBtn.classList.add('active');
+    studentBtn.classList.remove('active');
+    teacherForm.classList.add('active');
+    studentForm.classList.remove('active');
+  });
+</script>
+
+</body>
+</html>

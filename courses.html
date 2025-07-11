@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teachers</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header" style="display: flex; align-items: center; justify-content: space-between; padding: 15px 5%; background-color: #1e3a8a; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+
+    <!-- Logo -->
+    <a href="home.html" class="logo" style="font-size: 24px; font-weight: bold; color: #ffffff; text-decoration: none;">
+        <i class="fas fa-graduation-cap"></i> Eduvia
+    </a>
+
+        <!-- Hamburger Icon -->
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+  <!-- Navigation Center -->
+    <nav class="navbar" style="flex: 1; text-align: center;">
+        <ul style="list-style: none; display: inline-flex; gap: 25px; padding: 0; margin: 0;">
+            <li><a href="home.html" style="color: #ffffff; text-decoration: none;">home</a></li>
+            <li><a href="about.html" style="color: #ffffff; text-decoration: none;">about</a></li>
+            <li>
+                <a href="#" style="color: #ffffff; text-decoration: none;">Services</a>
+                <ul>
+                    <li><a href="course-1.html">Student Session</a></li>
+                    <li><a href="course-2.html">Teacher Session</a></li>
+                    <li><a href="course-3.html">Learning Resources</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#" style="color: #ffffff; text-decoration: none;" class="active"> Courses & Resources </a>
+                <ul>
+                    <li><a href="courses.html" >Courses</a></li>
+                    <li><a href="blog.html">Articles & Blog</a></li>
+                </ul>
+            </li>
+            <li><a href="contact.html" style="color: #ffffff; text-decoration: none;">contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars" style="color: white; font-size: 24px; display: none;"></div>
+
+
+    <!-- Login Button Right -->
+    <div>
+        <a href="login.html" class="login-btn" style="
+    background-color: #ffffff;
+    color: #1e3a8a;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.3s ease;
+" onmouseover="this.style.backgroundColor='#fa1d86'; this.style.color='#ffffff';" onmouseout="this.style.backgroundColor='#ffffff'; this.style.color='#1e3a8a';">
+    Login
+</a>
+        
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<section class="heading">
+    <h3>our teachers</h3>
+    <p> <a href="home.html">home >></a> Courses </p>
+</section>
+
+
+<section class="category-section">
+
+  <p class="section-subtitle" style="margin-bottom: 30px;">Explore Our Categories</p>
+
+  <div class="category-grid">
+
+    <!-- Card 1 -->
+    <div class="category-card blue-card light">
+      <div class="icon-wrapper">
+        <img src="images/category-1.png" alt="Computer Science" />
+      </div>
+      <h3>Computer Science</h3>
+      <p>Explore Fundamentals And Advanced Topics.</p>
+      <span class="course-count">25 Courses</span>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="category-card pink-card light">
+      <div class="icon-wrapper">
+        <img src="images/category-2.png" alt="Artificial Intelligence" />
+      </div>
+      <h3>Artificial Intelligence</h3>
+      <p>Dive into Machine Learning and Neural Networks.</p>
+      <span class="course-count">32 Courses</span>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="category-card blue-card light">
+      <div class="icon-wrapper">
+        <img src="images/category-3.png" alt="Database Management" />
+      </div>
+      <h3>Database Management</h3>
+      <p>Manage and organize data effectively.</p>
+      <span class="course-count">26 Courses</span>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="category-card pink-card light">
+      <div class="icon-wrapper">
+        <img src="images/category-4.png" alt="Web Development" />
+      </div>
+      <h3>Web Development</h3>
+      <p>Build modern responsive websites.</p>
+      <span class="course-count">12 Courses</span>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="category-card blue-card light">
+      <div class="icon-wrapper">
+        <img src="images/category-5.png" alt="Cyber Security" />
+      </div>
+      <h3>Cyber Security</h3>
+      <p>Protect networks and systems from digital attacks.</p>
+      <span class="course-count">18 Courses</span>
+    </div>
+
+    <!-- Card: Data Science -->
+<div class="category-card blue-card light">
+  <div class="icon-wrapper">
+    <i class="fas fa-chart-line" style="font-size: 32px; color: #1e3a8a;"></i>
+  </div>
+  <h3>Data Science</h3>
+  <p>Analyze and interpret complex data with tools and algorithms.</p>
+  <span class="course-count">21 Courses</span>
+</div>
+
+<!-- Card: UI/UX Design -->
+<div class="category-card pink-card light">
+  <div class="icon-wrapper">
+    <i class="fas fa-palette" style="font-size: 32px; color: #fa1d86;"></i>
+  </div>
+  <h3>UI/UX Design</h3>
+  <p>Design visually appealing and user-friendly digital products.</p>
+  <span class="course-count">14 Courses</span>
+</div>
+
+<!-- Card: Cloud Computing -->
+<div class="category-card blue-card light">
+  <div class="icon-wrapper">
+    <i class="fas fa-cloud" style="font-size: 32px; color: #1e3a8a;"></i>
+  </div>
+  <h3>Cloud Computing</h3>
+  <p>Learn about cloud services like AWS, Azure, and Google Cloud.</p>
+  <span class="course-count">19 Courses</span>
+</div>
+
+<!-- Card: Game Development -->
+<div class="category-card pink-card light">
+  <div class="icon-wrapper">
+    <i class="fas fa-gamepad" style="font-size: 32px; color: #fa1d86;"></i>
+  </div>
+  <h3>Game Development</h3>
+  <p>Create fun, interactive games using Unity, Unreal, and more.</p>
+  <span class="course-count">11 Courses</span>
+</div>
+
+<!-- Card: Digital Marketing -->
+<div class="category-card blue-card light">
+  <div class="icon-wrapper">
+    <i class="fas fa-bullhorn" style="font-size: 32px; color: #1e3a8a;"></i>
+  </div>
+  <h3>Digital Marketing</h3>
+  <p>Master SEO, social media strategy, and content marketing.</p>
+  <span class="course-count">28 Courses</span>
+</div>
+
+<!-- Card: Language Learning -->
+<div class="category-card pink-card light">
+  <div class="icon-wrapper">
+    <i class="fas fa-language" style="font-size: 32px; color: #fa1d86;"></i>
+  </div>
+  <h3>Language Learning</h3>
+  <p>Learn popular languages like English, Chinese, Japanese, and more.</p>
+  <span class="course-count">35 Courses</span>
+</div>
+
+
+  </div>
+</section>
+
+
+<!-- teachers section starts  -->
+
+<section style="max-width:1200px; margin:60px auto; padding:0 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+  <div style="text-align:center; margin-bottom:40px;">
+    <h2 style="font-size:2.5rem; font-weight:700; color:#224bcf;">
+      Free Courses</span>
+    </h2>
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap; gap:30px; justify-content:center;">
+
+  
+    <a href="login.html" style="text-decoration:none; color:inherit; width:300px;">
+      <div class="course-card" style="background:#fde3f1; border-radius:15px; box-shadow:0 8px 20px rgba(236,73,137,0.15); padding:20px; display:flex; flex-direction:column; height:100%;">
+        <img src="https://i.pinimg.com/736x/da/80/be/da80be647df418952f342b61d8c3ce2d.jpg" alt="Course 2" style="border-radius:12px; width:100%; height:180px; object-fit:cover; margin-bottom:15px;">
+        <div style="margin-bottom:10px;">
+          <span style="background:#ec4989; color:#fff; font-size:0.75rem; font-weight:600; padding:5px 12px; border-radius:20px;">Advanced</span>
+        </div>
+        <h3 style="color:#ec4989; font-weight:700; font-size:1.5rem; margin-bottom:10px;">
+          Machine Learning A-Z: Hands-On Python and Java
+        </h3>
+        <p style="color:#555; font-size:1.3rem; line-height:1.4; margin-bottom:10px;">
+          <span>📚 48 Lessons</span> &nbsp;&nbsp;&nbsp; <span>⏰ 18h 15m 44s</span>
+        </p>
+        <div style="color:#224bcf; font-weight:700; font-size:1.3rem; margin-bottom:10px;">
+          ★★★★★ <span style="color:#555; font-weight:400; font-size:1rem;">(18 Reviews)</span>
+        </div>
+        <div style="border-top:1px solid #ddd; padding-top:10px; display:flex; justify-content:space-between; align-items:center;">
+          <span style="color:#224bcf; font-weight:700; font-size:1rem;">Free</span>
+          <span style="color:#555; font-size:1rem;">
+            👥 65 Students
+          </span>
+        </div>
+      </div>
+    </a>
+
+
+    <a href="login.html" style="text-decoration:none; color:inherit; width:300px;">
+      <div class="course-card" style="background:#fde3f1; border-radius:15px; box-shadow:0 8px 20px rgba(236,73,137,0.15); padding:20px; display:flex; flex-direction:column; height:100%;">
+        <img src="https://i.pinimg.com/736x/da/80/be/da80be647df418952f342b61d8c3ce2d.jpg" alt="Course 2" style="border-radius:12px; width:100%; height:180px; object-fit:cover; margin-bottom:15px;">
+        <div style="margin-bottom:10px;">
+          <span style="background:#ec4989; color:#fff; font-size:0.75rem; font-weight:600; padding:5px 12px; border-radius:20px;">Advanced</span>
+        </div>
+        <h3 style="color:#ec4989; font-weight:700; font-size:1.5rem; margin-bottom:10px;">
+          Machine Learning A-Z: Hands-On Python and Java
+        </h3>
+        <p style="color:#555; font-size:1.3rem; line-height:1.4; margin-bottom:10px;">
+          <span>📚 48 Lessons</span> &nbsp;&nbsp;&nbsp; <span>⏰ 18h 15m 44s</span>
+        </p>
+        <div style="color:#224bcf; font-weight:700; font-size:1.3rem; margin-bottom:10px;">
+          ★★★★★ <span style="color:#555; font-weight:400; font-size:1rem;">(18 Reviews)</span>
+        </div>
+        <div style="border-top:1px solid #ddd; padding-top:10px; display:flex; justify-content:space-between; align-items:center;">
+          <span style="color:#224bcf; font-weight:700; font-size:1rem;">Free</span>
+          <span style="color:#555; font-size:1rem;">
+            👥 65 Students
+          </span>
+        </div>
+      </div>
+    </a>
+
+
+    <a href="login.html" style="text-decoration:none; color:inherit; width:300px;">
+      <div class="course-card" style="background:#fde3f1; border-radius:15px; box-shadow:0 8px 20px rgba(236,73,137,0.15); padding:20px; display:flex; flex-direction:column; height:100%;">
+        <img src="https://i.pinimg.com/736x/da/80/be/da80be647df418952f342b61d8c3ce2d.jpg" alt="Course 2" style="border-radius:12px; width:100%; height:180px; object-fit:cover; margin-bottom:15px;">
+        <div style="margin-bottom:10px;">
+          <span style="background:#ec4989; color:#fff; font-size:0.75rem; font-weight:600; padding:5px 12px; border-radius:20px;">Advanced</span>
+        </div>
+        <h3 style="color:#ec4989; font-weight:700; font-size:1.5rem; margin-bottom:10px;">
+          Machine Learning A-Z: Hands-On Python and Java
+        </h3>
+        <p style="color:#555; font-size:1.3rem; line-height:1.4; margin-bottom:10px;">
+          <span>📚 48 Lessons</span> &nbsp;&nbsp;&nbsp; <span>⏰ 18h 15m 44s</span>
+        </p>
+        <div style="color:#224bcf; font-weight:700; font-size:1.3rem; margin-bottom:10px;">
+          ★★★★★ <span style="color:#555; font-weight:400; font-size:1rem;">(18 Reviews)</span>
+        </div>
+        <div style="border-top:1px solid #ddd; padding-top:10px; display:flex; justify-content:space-between; align-items:center;">
+          <span style="color:#224bcf; font-weight:700; font-size:1rem;">Free</span>
+          <span style="color:#555; font-size:1rem;">
+            👥 65 Students
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <a href="login.html" style="text-decoration:none; color:inherit; width:300px;">
+      <div class="course-card" style="background:#fde3f1; border-radius:15px; box-shadow:0 8px 20px rgba(236,73,137,0.15); padding:20px; display:flex; flex-direction:column; height:100%;">
+        <img src="https://i.pinimg.com/736x/da/80/be/da80be647df418952f342b61d8c3ce2d.jpg" alt="Course 2" style="border-radius:12px; width:100%; height:180px; object-fit:cover; margin-bottom:15px;">
+        <div style="margin-bottom:10px;">
+          <span style="background:#ec4989; color:#fff; font-size:0.75rem; font-weight:600; padding:5px 12px; border-radius:20px;">Advanced</span>
+        </div>
+        <h3 style="color:#ec4989; font-weight:700; font-size:1.5rem; margin-bottom:10px;">
+          Machine Learning A-Z: Hands-On Python and Java
+        </h3>
+        <p style="color:#555; font-size:1.3rem; line-height:1.4; margin-bottom:10px;">
+          <span>📚 48 Lessons</span> &nbsp;&nbsp;&nbsp; <span>⏰ 18h 15m 44s</span>
+        </p>
+        <div style="color:#224bcf; font-weight:700; font-size:1.3rem; margin-bottom:10px;">
+          ★★★★★ <span style="color:#555; font-weight:400; font-size:1rem;">(18 Reviews)</span>
+        </div>
+        <div style="border-top:1px solid #ddd; padding-top:10px; display:flex; justify-content:space-between; align-items:center;">
+          <span style="color:#224bcf; font-weight:700; font-size:1rem;">Free</span>
+          <span style="color:#555; font-size:1rem;">
+            👥 65 Students
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <a href="login.html" style="text-decoration:none; color:inherit; width:300px;">
+      <div class="course-card" style="background:#fde3f1; border-radius:15px; box-shadow:0 8px 20px rgba(236,73,137,0.15); padding:20px; display:flex; flex-direction:column; height:100%;">
+        <img src="https://i.pinimg.com/736x/da/80/be/da80be647df418952f342b61d8c3ce2d.jpg" alt="Course 2" style="border-radius:12px; width:100%; height:180px; object-fit:cover; margin-bottom:15px;">
+        <div style="margin-bottom:10px;">
+          <span style="background:#ec4989; color:#fff; font-size:0.75rem; font-weight:600; padding:5px 12px; border-radius:20px;">Advanced</span>
+        </div>
+        <h3 style="color:#ec4989; font-weight:700; font-size:1.5rem; margin-bottom:10px;">
+          Machine Learning A-Z: Hands-On Python and Java
+        </h3>
+        <p style="color:#555; font-size:1.3rem; line-height:1.4; margin-bottom:10px;">
+          <span>📚 48 Lessons</span> &nbsp;&nbsp;&nbsp; <span>⏰ 18h 15m 44s</span>
+        </p>
+        <div style="color:#224bcf; font-weight:700; font-size:1.3rem; margin-bottom:10px;">
+          ★★★★★ <span style="color:#555; font-weight:400; font-size:1rem;">(18 Reviews)</span>
+        </div>
+        <div style="border-top:1px solid #ddd; padding-top:10px; display:flex; justify-content:space-between; align-items:center;">
+          <span style="color:#224bcf; font-weight:700; font-size:1rem;">Free</span>
+          <span style="color:#555; font-size:1rem;">
+            👥 65 Students
+          </span>
+        </div>
+      </div>
+    </a>
+
+
+    <a href="login.html" style="text-decoration:none; color:inherit; width:300px;">
+      <div class="course-card" style="background:#fde3f1; border-radius:15px; box-shadow:0 8px 20px rgba(236,73,137,0.15); padding:20px; display:flex; flex-direction:column; height:100%;">
+        <img src="https://i.pinimg.com/736x/da/80/be/da80be647df418952f342b61d8c3ce2d.jpg" alt="Course 2" style="border-radius:12px; width:100%; height:180px; object-fit:cover; margin-bottom:15px;">
+        <div style="margin-bottom:10px;">
+          <span style="background:#ec4989; color:#fff; font-size:0.75rem; font-weight:600; padding:5px 12px; border-radius:20px;">Advanced</span>
+        </div>
+        <h3 style="color:#ec4989; font-weight:700; font-size:1.5rem; margin-bottom:10px;">
+          Machine Learning A-Z: Hands-On Python and Java
+        </h3>
+        <p style="color:#555; font-size:1.3rem; line-height:1.4; margin-bottom:10px;">
+          <span>📚 48 Lessons</span> &nbsp;&nbsp;&nbsp; <span>⏰ 18h 15m 44s</span>
+        </p>
+        <div style="color:#224bcf; font-weight:700; font-size:1.3rem; margin-bottom:10px;">
+          ★★★★★ <span style="color:#555; font-weight:400; font-size:1rem;">(18 Reviews)</span>
+        </div>
+        <div style="border-top:1px solid #ddd; padding-top:10px; display:flex; justify-content:space-between; align-items:center;">
+          <span style="color:#224bcf; font-weight:700; font-size:1rem;">Free</span>
+          <span style="color:#555; font-size:1rem;">
+            👥 65 Students
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <a href="login.html" style="text-decoration:none; color:inherit; width:300px;">
+      <div class="course-card" style="background:#fde3f1; border-radius:15px; box-shadow:0 8px 20px rgba(236,73,137,0.15); padding:20px; display:flex; flex-direction:column; height:100%;">
+        <img src="https://i.pinimg.com/736x/da/80/be/da80be647df418952f342b61d8c3ce2d.jpg" alt="Course 2" style="border-radius:12px; width:100%; height:180px; object-fit:cover; margin-bottom:15px;">
+        <div style="margin-bottom:10px;">
+          <span style="background:#ec4989; color:#fff; font-size:0.75rem; font-weight:600; padding:5px 12px; border-radius:20px;">Advanced</span>
+        </div>
+        <h3 style="color:#ec4989; font-weight:700; font-size:1.5rem; margin-bottom:10px;">
+          Machine Learning A-Z: Hands-On Python and Java
+        </h3>
+        <p style="color:#555; font-size:1.3rem; line-height:1.4; margin-bottom:10px;">
+          <span>📚 48 Lessons</span> &nbsp;&nbsp;&nbsp; <span>⏰ 18h 15m 44s</span>
+        </p>
+        <div style="color:#224bcf; font-weight:700; font-size:1.3rem; margin-bottom:10px;">
+          ★★★★★ <span style="color:#555; font-weight:400; font-size:1rem;">(18 Reviews)</span>
+        </div>
+        <div style="border-top:1px solid #ddd; padding-top:10px; display:flex; justify-content:space-between; align-items:center;">
+          <span style="color:#224bcf; font-weight:700; font-size:1rem;">Free</span>
+          <span style="color:#555; font-size:1rem;">
+            👥 65 Students
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <a href="login.html" style="text-decoration:none; color:inherit; width:300px;">
+      <div class="course-card" style="background:#fde3f1; border-radius:15px; box-shadow:0 8px 20px rgba(236,73,137,0.15); padding:20px; display:flex; flex-direction:column; height:100%;">
+        <img src="https://i.pinimg.com/736x/da/80/be/da80be647df418952f342b61d8c3ce2d.jpg" alt="Course 2" style="border-radius:12px; width:100%; height:180px; object-fit:cover; margin-bottom:15px;">
+        <div style="margin-bottom:10px;">
+          <span style="background:#ec4989; color:#fff; font-size:0.75rem; font-weight:600; padding:5px 12px; border-radius:20px;">Advanced</span>
+        </div>
+        <h3 style="color:#ec4989; font-weight:700; font-size:1.5rem; margin-bottom:10px;">
+          Machine Learning A-Z: Hands-On Python and Java
+        </h3>
+        <p style="color:#555; font-size:1.3rem; line-height:1.4; margin-bottom:10px;">
+          <span>📚 48 Lessons</span> &nbsp;&nbsp;&nbsp; <span>⏰ 18h 15m 44s</span>
+        </p>
+        <div style="color:#224bcf; font-weight:700; font-size:1.3rem; margin-bottom:10px;">
+          ★★★★★ <span style="color:#555; font-weight:400; font-size:1rem;">(18 Reviews)</span>
+        </div>
+        <div style="border-top:1px solid #ddd; padding-top:10px; display:flex; justify-content:space-between; align-items:center;">
+          <span style="color:#224bcf; font-weight:700; font-size:1rem;">Free</span>
+          <span style="color:#555; font-size:1rem;">
+            👥 65 Students
+          </span>
+        </div>
+      </div>
+    </a>
+
+
+    <a href="login.html" style="text-decoration:none; color:inherit; width:300px;">
+      <div class="course-card" style="background:#fde3f1; border-radius:15px; box-shadow:0 8px 20px rgba(236,73,137,0.15); padding:20px; display:flex; flex-direction:column; height:100%;">
+        <img src="https://i.pinimg.com/736x/da/80/be/da80be647df418952f342b61d8c3ce2d.jpg" alt="Course 2" style="border-radius:12px; width:100%; height:180px; object-fit:cover; margin-bottom:15px;">
+        <div style="margin-bottom:10px;">
+          <span style="background:#ec4989; color:#fff; font-size:0.75rem; font-weight:600; padding:5px 12px; border-radius:20px;">Advanced</span>
+        </div>
+        <h3 style="color:#ec4989; font-weight:700; font-size:1.5rem; margin-bottom:10px;">
+          Machine Learning A-Z: Hands-On Python and Java
+        </h3>
+        <p style="color:#555; font-size:1.3rem; line-height:1.4; margin-bottom:10px;">
+          <span>📚 48 Lessons</span> &nbsp;&nbsp;&nbsp; <span>⏰ 18h 15m 44s</span>
+        </p>
+        <div style="color:#224bcf; font-weight:700; font-size:1.3rem; margin-bottom:10px;">
+          ★★★★★ <span style="color:#555; font-weight:400; font-size:1rem;">(18 Reviews)</span>
+        </div>
+        <div style="border-top:1px solid #ddd; padding-top:10px; display:flex; justify-content:space-between; align-items:center;">
+          <span style="color:#224bcf; font-weight:700; font-size:1rem;">Free</span>
+          <span style="color:#555; font-size:1rem;">
+            👥 65 Students
+          </span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+</section>
+
+<section style="max-width:1200px; margin:60px auto; padding:0 20px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+  <div style="text-align:center; margin-bottom:40px; margin-top: 200px;">
+    <h2 style="font-size:2.5rem; font-weight:700; color:#224bcf;">
+      Premium Courses</span>
+    </h2>
+  </div>
+
+  <div style="display:flex; flex-wrap:wrap; gap:30px; justify-content:center;">
+
+  
+    <a href="login.html" style="text-decoration:none; color:inherit; width:300px;">
+      <div class="course-card" style="background:#f0f7ff; border-radius:15px; box-shadow:0 8px 20px rgba(34,75,207,0.1); padding:20px; display:flex; flex-direction:column; height:100%;">
+        <img src="https://i.pinimg.com/736x/da/80/be/da80be647df418952f342b61d8c3ce2d.jpg" alt="Course 1" style="border-radius:12px; width:100%; height:180px; object-fit:cover; margin-bottom:15px;">
+        <div style="margin-bottom:10px;">
+          <span style="background:#224bcf; color:#fff; font-size:0.75rem; font-weight:600; padding:5px 12px; border-radius:20px;">Intermediate</span>
+        </div>
+        <h3 style="color:#224bcf; font-weight:700; font-size:1.5rem; margin-bottom:10px;">
+          Competitive Strategy Law for All Students
+        </h3>
+        <p style="color:#555; font-size:1.3rem; line-height:1.4; margin-bottom:10px;">
+          <span>📚 35 Lessons</span> &nbsp;&nbsp;&nbsp; <span>⏰ 18h 15m 44s</span>
+        </p>
+        <div style="color:#f44747; font-weight:700; font-size:1.3rem; margin-bottom:10px;">
+          ★★★★★ <span style="color:#555; font-weight:400; font-size:1rem;">(18 Reviews)</span>
+        </div>
+        <div style="border-top:1px solid #ddd; padding-top:10px; display:flex; justify-content:space-between; align-items:center;">
+          <span style="color:#224bcf; font-weight:700; font-size:1.3rem;">25000 mmk <span style="text-decoration:line-through; color:#999; font-weight:400; font-size:1rem;">28000 mmk</span></span>
+          <span style="color:#555; font-size:1rem;">
+            👥 47 Students
+          </span>
+        </div>
+      </div>
+    </a>
+
+
+    <a href="login.html" style="text-decoration:none; color:inherit; width:300px;">
+      <div class="course-card" style="background:#e6f0ff; border-radius:15px; box-shadow:0 8px 20px rgba(34,75,207,0.1); padding:20px; display:flex; flex-direction:column; height:100%;">
+        <img src="https://i.pinimg.com/736x/da/80/be/da80be647df418952f342b61d8c3ce2d.jpg" alt="Course 3" style="border-radius:12px; width:100%; height:180px; object-fit:cover; margin-bottom:15px;">
+        <div style="margin-bottom:10px;">
+          <span style="background:#224bcf; color:#fff; font-size:0.75rem; font-weight:600; padding:5px 12px; border-radius:20px;">Basic</span>
+        </div>
+        <h3 style="color:#224bcf; font-weight:700; font-size:1.5rem; margin-bottom:10px;">
+          Achieving Advanced in Insights with Big Data
+        </h3>
+        <p style="color:#555; font-size:1.3rem; line-height:1.4; margin-bottom:10px;">
+          <span>📚 80 Lessons</span> &nbsp;&nbsp;&nbsp; <span>⏰ 18h 15m 44s</span>
+        </p>
+        <div style="color:#f44747; font-weight:700; font-size:1rem; margin-bottom:10px;">
+          ★★★★★ <span style="color:#555; font-weight:400; font-size:1rem;">(18 Reviews)</span>
+        </div>
+        <div style="border-top:1px solid #ddd; padding-top:10px; display:flex; justify-content:space-between; align-items:center;">
+          <span style="color:#224bcf; font-weight:700; font-size:1.3rem;">15000 mmk <span style="text-decoration:line-through; color:#999; font-weight:400; font-size:1rem;">18000 mmk</span></span>
+          <span style="color:#555; font-size:1rem;">
+            👥 42 Students
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <a href="login.html" style="text-decoration:none; color:inherit; width:300px;">
+      <div class="course-card" style="background:#f0f7ff; border-radius:15px; box-shadow:0 8px 20px rgba(34,75,207,0.1); padding:20px; display:flex; flex-direction:column; height:100%;">
+        <img src="https://i.pinimg.com/736x/da/80/be/da80be647df418952f342b61d8c3ce2d.jpg" alt="Course 1" style="border-radius:12px; width:100%; height:180px; object-fit:cover; margin-bottom:15px;">
+        <div style="margin-bottom:10px;">
+          <span style="background:#224bcf; color:#fff; font-size:0.75rem; font-weight:600; padding:5px 12px; border-radius:20px;">Intermediate</span>
+        </div>
+        <h3 style="color:#224bcf; font-weight:700; font-size:1.5rem; margin-bottom:10px;">
+          Competitive Strategy Law for All Students
+        </h3>
+        <p style="color:#555; font-size:1.3rem; line-height:1.4; margin-bottom:10px;">
+          <span>📚 35 Lessons</span> &nbsp;&nbsp;&nbsp; <span>⏰ 18h 15m 44s</span>
+        </p>
+        <div style="color:#f44747; font-weight:700; font-size:1.3rem; margin-bottom:10px;">
+          ★★★★★ <span style="color:#555; font-weight:400; font-size:1rem;">(18 Reviews)</span>
+        </div>
+        <div style="border-top:1px solid #ddd; padding-top:10px; display:flex; justify-content:space-between; align-items:center;">
+          <span style="color:#224bcf; font-weight:700; font-size:1.3rem;">30000 mmk <span style="text-decoration:line-through; color:#999; font-weight:400; font-size:1rem;">28000 mmk</span></span>
+          <span style="color:#555; font-size:1rem;">
+            👥 47 Students
+          </span>
+        </div>
+      </div>
+    </a>
+
+
+    <a href="login.html" style="text-decoration:none; color:inherit; width:300px;">
+      <div class="course-card" style="background:#e6f0ff; border-radius:15px; box-shadow:0 8px 20px rgba(34,75,207,0.1); padding:20px; display:flex; flex-direction:column; height:100%;">
+        <img src="https://i.pinimg.com/736x/da/80/be/da80be647df418952f342b61d8c3ce2d.jpg" alt="Course 3" style="border-radius:12px; width:100%; height:180px; object-fit:cover; margin-bottom:15px;">
+        <div style="margin-bottom:10px;">
+          <span style="background:#224bcf; color:#fff; font-size:0.75rem; font-weight:600; padding:5px 12px; border-radius:20px;">Basic</span>
+        </div>
+        <h3 style="color:#224bcf; font-weight:700; font-size:1.5rem; margin-bottom:10px;">
+          Achieving Advanced in Insights with Big Data
+        </h3>
+        <p style="color:#555; font-size:1.3rem; line-height:1.4; margin-bottom:10px;">
+          <span>📚 80 Lessons</span> &nbsp;&nbsp;&nbsp; <span>⏰ 18h 15m 44s</span>
+        </p>
+        <div style="color:#f44747; font-weight:700; font-size:1rem; margin-bottom:10px;">
+          ★★★★★ <span style="color:#555; font-weight:400; font-size:1rem;">(18 Reviews)</span>
+        </div>
+        <div style="border-top:1px solid #ddd; padding-top:10px; display:flex; justify-content:space-between; align-items:center;">
+          <span style="color:#224bcf; font-weight:700; font-size:1.3rem;">22000 mmk <span style="text-decoration:line-through; color:#999; font-weight:400; font-size:1rem;">25000 mmk</span></span>
+          <span style="color:#555; font-size:1rem;">
+            👥 42 Students
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <a href="login.html" style="text-decoration:none; color:inherit; width:300px;">
+      <div class="course-card" style="background:#f0f7ff; border-radius:15px; box-shadow:0 8px 20px rgba(34,75,207,0.1); padding:20px; display:flex; flex-direction:column; height:100%;">
+        <img src="https://i.pinimg.com/736x/da/80/be/da80be647df418952f342b61d8c3ce2d.jpg" alt="Course 1" style="border-radius:12px; width:100%; height:180px; object-fit:cover; margin-bottom:15px;">
+        <div style="margin-bottom:10px;">
+          <span style="background:#224bcf; color:#fff; font-size:0.75rem; font-weight:600; padding:5px 12px; border-radius:20px;">Intermediate</span>
+        </div>
+        <h3 style="color:#224bcf; font-weight:700; font-size:1.5rem; margin-bottom:10px;">
+          Competitive Strategy Law for All Students
+        </h3>
+        <p style="color:#555; font-size:1.3rem; line-height:1.4; margin-bottom:10px;">
+          <span>📚 35 Lessons</span> &nbsp;&nbsp;&nbsp; <span>⏰ 18h 15m 44s</span>
+        </p>
+        <div style="color:#f44747; font-weight:700; font-size:1.3rem; margin-bottom:10px;">
+          ★★★★★ <span style="color:#555; font-weight:400; font-size:1rem;">(18 Reviews)</span>
+        </div>
+        <div style="border-top:1px solid #ddd; padding-top:10px; display:flex; justify-content:space-between; align-items:center;">
+          <span style="color:#224bcf; font-weight:700; font-size:1.3rem;">19500 mmk <span style="text-decoration:line-through; color:#999; font-weight:400; font-size:1rem;">23000 mmk</span></span>
+          <span style="color:#555; font-size:1rem;">
+            👥 47 Students
+          </span>
+        </div>
+      </div>
+    </a>
+
+
+    <a href="login.html" style="text-decoration:none; color:inherit; width:300px;">
+      <div class="course-card" style="background:#e6f0ff; border-radius:15px; box-shadow:0 8px 20px rgba(34,75,207,0.1); padding:20px; display:flex; flex-direction:column; height:100%;">
+        <img src="https://i.pinimg.com/736x/da/80/be/da80be647df418952f342b61d8c3ce2d.jpg" alt="Course 3" style="border-radius:12px; width:100%; height:180px; object-fit:cover; margin-bottom:15px;">
+        <div style="margin-bottom:10px;">
+          <span style="background:#224bcf; color:#fff; font-size:0.75rem; font-weight:600; padding:5px 12px; border-radius:20px;">Basic</span>
+        </div>
+        <h3 style="color:#224bcf; font-weight:700; font-size:1.5rem; margin-bottom:10px;">
+          Achieving Advanced in Insights with Big Data
+        </h3>
+        <p style="color:#555; font-size:1.3rem; line-height:1.4; margin-bottom:10px;">
+          <span>📚 80 Lessons</span> &nbsp;&nbsp;&nbsp; <span>⏰ 18h 15m 44s</span>
+        </p>
+        <div style="color:#f44747; font-weight:700; font-size:1rem; margin-bottom:10px;">
+          ★★★★★ <span style="color:#555; font-weight:400; font-size:1rem;">(18 Reviews)</span>
+        </div>
+        <div style="border-top:1px solid #ddd; padding-top:10px; display:flex; justify-content:space-between; align-items:center;">
+          <span style="color:#224bcf; font-weight:700; font-size:1.3rem;">16000 mmk <span style="text-decoration:line-through; color:#999; font-weight:400; font-size:1rem;">17500 mmk</span></span>
+          <span style="color:#555; font-size:1rem;">
+            👥 42 Students
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <a href="login.html" style="text-decoration:none; color:inherit; width:300px;">
+      <div class="course-card" style="background:#f0f7ff; border-radius:15px; box-shadow:0 8px 20px rgba(34,75,207,0.1); padding:20px; display:flex; flex-direction:column; height:100%;">
+        <img src="https://i.pinimg.com/736x/da/80/be/da80be647df418952f342b61d8c3ce2d.jpg" alt="Course 1" style="border-radius:12px; width:100%; height:180px; object-fit:cover; margin-bottom:15px;">
+        <div style="margin-bottom:10px;">
+          <span style="background:#224bcf; color:#fff; font-size:0.75rem; font-weight:600; padding:5px 12px; border-radius:20px;">Intermediate</span>
+        </div>
+        <h3 style="color:#224bcf; font-weight:700; font-size:1.5rem; margin-bottom:10px;">
+          Competitive Strategy Law for All Students
+        </h3>
+        <p style="color:#555; font-size:1.3rem; line-height:1.4; margin-bottom:10px;">
+          <span>📚 35 Lessons</span> &nbsp;&nbsp;&nbsp; <span>⏰ 18h 15m 44s</span>
+        </p>
+        <div style="color:#f44747; font-weight:700; font-size:1.3rem; margin-bottom:10px;">
+          ★★★★★ <span style="color:#555; font-weight:400; font-size:1rem;">(18 Reviews)</span>
+        </div>
+        <div style="border-top:1px solid #ddd; padding-top:10px; display:flex; justify-content:space-between; align-items:center;">
+          <span style="color:#224bcf; font-weight:700; font-size:1.3rem;">23000 mmk <span style="text-decoration:line-through; color:#999; font-weight:400; font-size:1rem;">25500 mmk</span></span>
+          <span style="color:#555; font-size:1rem;">
+            👥 47 Students
+          </span>
+        </div>
+      </div>
+    </a>
+
+
+    <a href="login.html" style="text-decoration:none; color:inherit; width:300px;">
+      <div class="course-card" style="background:#e6f0ff; border-radius:15px; box-shadow:0 8px 20px rgba(34,75,207,0.1); padding:20px; display:flex; flex-direction:column; height:100%;">
+        <img src="https://i.pinimg.com/736x/da/80/be/da80be647df418952f342b61d8c3ce2d.jpg" alt="Course 3" style="border-radius:12px; width:100%; height:180px; object-fit:cover; margin-bottom:15px;">
+        <div style="margin-bottom:10px;">
+          <span style="background:#224bcf; color:#fff; font-size:0.75rem; font-weight:600; padding:5px 12px; border-radius:20px;">Basic</span>
+        </div>
+        <h3 style="color:#224bcf; font-weight:700; font-size:1.5rem; margin-bottom:10px;">
+          Achieving Advanced in Insights with Big Data
+        </h3>
+        <p style="color:#555; font-size:1.3rem; line-height:1.4; margin-bottom:10px;">
+          <span>📚 80 Lessons</span> &nbsp;&nbsp;&nbsp; <span>⏰ 18h 15m 44s</span>
+        </p>
+        <div style="color:#f44747; font-weight:700; font-size:1rem; margin-bottom:10px;">
+          ★★★★★ <span style="color:#555; font-weight:400; font-size:1rem;">(18 Reviews)</span>
+        </div>
+        <div style="border-top:1px solid #ddd; padding-top:10px; display:flex; justify-content:space-between; align-items:center;">
+          <span style="color:#224bcf; font-weight:700; font-size:1.3rem;">24000 mmk <span style="text-decoration:line-through; color:#999; font-weight:400; font-size:1rem;">26800 mmk</span></span>
+          <span style="color:#555; font-size:1rem;">
+            👥 42 Students
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <a href="login.html" style="text-decoration:none; color:inherit; width:300px;">
+      <div class="course-card" style="background:#f0f7ff; border-radius:15px; box-shadow:0 8px 20px rgba(34,75,207,0.1); padding:20px; display:flex; flex-direction:column; height:100%;">
+        <img src="https://i.pinimg.com/736x/da/80/be/da80be647df418952f342b61d8c3ce2d.jpg" alt="Course 1" style="border-radius:12px; width:100%; height:180px; object-fit:cover; margin-bottom:15px;">
+        <div style="margin-bottom:10px;">
+          <span style="background:#224bcf; color:#fff; font-size:0.75rem; font-weight:600; padding:5px 12px; border-radius:20px;">Intermediate</span>
+        </div>
+        <h3 style="color:#224bcf; font-weight:700; font-size:1.5rem; margin-bottom:10px;">
+          Competitive Strategy Law for All Students
+        </h3>
+        <p style="color:#555; font-size:1.3rem; line-height:1.4; margin-bottom:10px;">
+          <span>📚 35 Lessons</span> &nbsp;&nbsp;&nbsp; <span>⏰ 18h 15m 44s</span>
+        </p>
+        <div style="color:#f44747; font-weight:700; font-size:1.3rem; margin-bottom:10px;">
+          ★★★★★ <span style="color:#555; font-weight:400; font-size:1rem;">(18 Reviews)</span>
+        </div>
+        <div style="border-top:1px solid #ddd; padding-top:10px; display:flex; justify-content:space-between; align-items:center;">
+          <span style="color:#224bcf; font-weight:700; font-size:1.3rem;">17500 mmk <span style="text-decoration:line-through; color:#999; font-weight:400; font-size:1rem;">19500 mmk</span></span>
+          <span style="color:#555; font-size:1rem;">
+            👥 47 Students
+          </span>
+        </div>
+      </div>
+    </a>
+
+
+
+  </div>
+</section>
+
+
+
+
+
+<!-- footer section starts -->
+<footer style="background: linear-gradient(to right, #fdf2f8, #f8fafc); padding: 80px 8% 50px; font-family: 'Segoe UI', sans-serif;">
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 60px;">
+
+    <!-- Branding and About -->
+    <div style="flex: 1 1 260px; min-width: 240px;">
+      <h2 style="color: #224bcf; font-size: 32px; font-weight: bold; margin-bottom: 20px;">Eduvia</h2>
+      <p style="color: #444; font-size: 16px; line-height: 1.9; margin-bottom: 25px;">
+        Lorem Ipsum Amet, Consectetur Adipisicing Elit. Suspendis Varius Enim Eros Elementum Tristique. Duis Cursus.
+      </p>
+      <div style="display: flex; gap: 14px;">
+        <a href="#"><i class="fab fa-facebook-f" style="color: #fff; background: #3b82f6; font-size: 20px; padding: 12px 15px; border-radius: 8px;"></i></a>
+        <a href="#"><i class="fab fa-twitter" style="color: #fff; background: #0ea5e9; font-size: 20px; padding: 12px 15px; border-radius: 8px;"></i></a>
+        <a href="#"><i class="fab fa-pinterest" style="color: #fff; background: #dc2626; font-size: 20px; padding: 12px 15px; border-radius: 8px;"></i></a>
+        <a href="#"><i class="fab fa-instagram" style="color: #fff; background: linear-gradient(45deg,#fd1d1d,#833ab4); font-size: 20px; padding: 12px 15px; border-radius: 8px;"></i></a>
+      </div>
+    </div>
+
+    <!-- Links -->
+    <div style="flex: 1 1 180px; min-width: 160px;">
+      <h4 style="font-weight: bold; color: #111; font-size: 20px; margin-bottom: 20px;">Links</h4>
+      <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 2.2;">
+        <li><a href="home.html" style="color: #444; text-decoration: none;" onmouseover="this.style.color='#224bcf'" onmouseout="this.style.color='#444'">Home</a></li>
+        <li><a href="about.html" style="color: #444; text-decoration: none;" onmouseover="this.style.color='#224bcf'" onmouseout="this.style.color='#444'">About Us</a></li>
+        <li><a href="course-1.html" style="color: #444; text-decoration: none;" onmouseover="this.style.color='#224bcf'" onmouseout="this.style.color='#444'">Student Session</a></li>
+        <li><a href="course-2.html" style="color: #444; text-decoration: none;" onmouseover="this.style.color='#224bcf'" onmouseout="this.style.color='#444'">Teacher Session</a></li>
+        <li><a href="courses.html" style="color: #444; text-decoration: none;" onmouseover="this.style.color='#224bcf'" onmouseout="this.style.color='#444'">Courses</a></li>
+        <li><a href="contact.html" style="color: #444; text-decoration: none;" onmouseover="this.style.color='#224bcf'" onmouseout="this.style.color='#444'">Contact Us</a></li>
+        <li><a href="blog.html" style="color: #444; text-decoration: none;" onmouseover="this.style.color='#224bcf'" onmouseout="this.style.color='#444'">Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- Legal -->
+    <div style="flex: 1 1 180px; min-width: 160px;">
+      <h4 style="font-weight: bold; color: #111; font-size: 20px; margin-bottom: 20px;">Legal</h4>
+      <ul style="list-style: none; padding: 0; font-size: 16px; line-height: 2.2;">
+        <li><a href="#" style="color: #444; text-decoration: none;" onmouseover="this.style.color='#224bcf'" onmouseout="this.style.color='#444'">Legal</a></li>
+        <li><a href="#" style="color: #444; text-decoration: none;" onmouseover="this.style.color='#224bcf'" onmouseout="this.style.color='#444'">Terms Of Use</a></li>
+        <li><a href="#" style="color: #444; text-decoration: none;" onmouseover="this.style.color='#224bcf'" onmouseout="this.style.color='#444'">Team & Condition</a></li>
+        <li><a href="#" style="color: #444; text-decoration: none;" onmouseover="this.style.color='#224bcf'" onmouseout="this.style.color='#444'">Payment Method</a></li>
+        <li><a href="#" style="color: #444; text-decoration: none;" onmouseover="this.style.color='#224bcf'" onmouseout="this.style.color='#444'">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Instagram -->
+    <div style="flex: 1 1 240px; min-width: 200px;">
+      <h4 style="font-weight: bold; color: #111; font-size: 20px; margin-bottom: 20px;">Instagram Post</h4>
+      <div class="instagram-posts" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+        <img src="https://i.pinimg.com/736x/b2/da/f9/b2daf9019c4b08fa3a90c7d28a08a059.jpg" alt="" style="width: 100%; height: 100px; border-radius: 6px; object-fit: cover;">
+        <img src="https://i.pinimg.com/736x/58/76/b0/5876b0a74d591114091e9e3c4c1d6c89.jpg" alt="" style="width: 100%; height: 100px; border-radius: 6px; object-fit: cover;">
+        <img src="https://i.pinimg.com/736x/08/0b/49/080b490a2fbcb3072c2c347d07223353.jpg" alt="" style="width: 100%; height: 100px; border-radius: 6px; object-fit: cover;">
+        <img src="https://i.pinimg.com/736x/21/9c/96/219c96f523f5a9fb55de5489fb124546.jpg" alt="" style="width: 100%; height: 100px; border-radius: 6px; object-fit: cover;">
+        <img src="https://i.pinimg.com/736x/88/e9/ad/88e9ad59c8c3c2cb8ae41a405261e23e.jpg" alt="" style="width: 100%; height: 100px; border-radius: 6px; object-fit: cover;">
+        <img src="https://i.pinimg.com/736x/10/31/7e/10317ebc335aef5ac1cbdf1c5361aeee.jpg" alt="" style="width: 100%; height: 100px; border-radius: 6px; object-fit: cover;">
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom -->
+  <div style="text-align: center; padding-top: 40px; margin-top: 70px; border-top: 1px solid #e2e8f0; font-size: 15px; color: #666;">
+    © Copyright 2025 | Skilline Template | All Rights Reserved by YourName
+  </div>
+
+</footer>
+<!-- footer section ends -->
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
